@@ -174,6 +174,42 @@ h1 {
   color: #4a4036;
 }
 
+.books-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.book-card {
+  background: #ffffff;
+  border: 1px solid #e8ddc9;
+  border-radius: 16px;
+  padding: 24px 20px;
+}
+
+.book-card h2 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: #2b2118;
+  margin-bottom: 6px;
+}
+
+.book-meta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #7a5c38;
+  margin-bottom: 12px;
+}
+
+.book-card p:last-child {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #4a4036;
+}
+
 .site-footer {
   border-top: 1px solid #e8ddc9;
   background: #fffdf8;
@@ -190,7 +226,8 @@ h1 {
 
 /* Планшет */
 @media (max-width: 720px) {
-  .advantages-list { grid-template-columns: 1fr; }
+  .advantages-list,
+  .books-list { grid-template-columns: 1fr; }
   h1 { font-size: 2rem; }
 }
 
